@@ -1,9 +1,9 @@
-export interface IfTTTResponse {
+export interface IFTTTResponse {
   status: number;
   message: string;
 }
 
-export class IfTTTApi {
+export class IFTTTApi {
   private readonly key: string;
 
   public constructor(key: string) {
@@ -15,7 +15,7 @@ export class IfTTTApi {
     value1?: string,
     value2?: string,
     value3?: string,
-  ): Promise<IfTTTResponse> {
+  ): Promise<IFTTTResponse> {
     const response = await fetch(
       `https://maker.ifttt.com/trigger/${event}/with/key/${this.key}`,
       {

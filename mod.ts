@@ -1,1 +1,1 @@
-export { IfTTTApi, IfTTTResponse } from "./src/index.ts";
+export { IFTTTApi, IFTTTResponse } from "./src/index.ts";
